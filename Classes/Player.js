@@ -117,7 +117,7 @@ class Player {
     }
 
     if (cellChecking.whatAmI != this.currentItem) {
-      gui.money += floor(cellChecking.price / 2);
+      gui.money += cellChecking.price / 2;
     }
   }
 
