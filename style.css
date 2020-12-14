@@ -19,7 +19,7 @@ canvas {
 /*Show info about blocks*/
 
 .tooltip {
-  position: absolute;
+  position: relative;
   display: inline-block;
   border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 }
