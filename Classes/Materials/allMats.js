@@ -48,7 +48,7 @@ class IronPlate extends Material {
   draw() {
     push();
     fill(255);
-    rect(this.x + this.w/2 + this.blockW/2, this.y + this.h/2 + this.blockH/2, this.w, this.h);
+    rect(this.x + this.w/2 + this.blockW/4, this.y + this.h/2 + this.blockH/4, this.w, this.h);
     pop();
   }
   
@@ -66,7 +66,7 @@ class GoldPlate extends Material {
   draw() {
     push();
     fill(255,223,0);
-    rect(this.x + this.w/2 + this.blockW/2, this.y + this.h/2 + this.blockH/2, this.w, this.h);
+    rect(this.x + this.w/2 + this.blockW/4, this.y + this.h/2 + this.blockH/4, this.w, this.h);
     pop();
   }
   
@@ -85,7 +85,7 @@ class IronTrin extends Material {
   draw() {
     push();
     fill(255);
-    triangle(this.x + this.w/2 + this.blockW/4, this.y, this.x + this.blockW/4, this.y + this.h + this.blockH/4, this.x + this.w + this.blockW/4, this.y + this.h);
+    triangle(this.x + this.w/2 + this.blockW/4, this.y, this.x + this.blockW/4, this.y + this.h + this.blockH/4, this.x + this.w + this.blockW/4, this.y + this.h + this.blockH/4);
     pop();
   }
   
@@ -103,7 +103,7 @@ class GoldTrin extends Material {
   draw() {
     push();
     fill(255,223,0);
-    triangle(this.x + this.w/2 + this.blockW/4, this.y, this.x + this.blockW/4, this.y + this.h + this.blockH/4, this.x + this.w + this.blockW/4, this.y + this.h);
+    triangle(this.x + this.w/2 + this.blockW/4, this.y, this.x + this.blockW/4, this.y + this.h + this.blockH/4, this.x + this.w + this.blockW/4, this.y + this.h + this.blockH/4);
     pop();
   }
   
