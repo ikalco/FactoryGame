@@ -9,11 +9,11 @@ body {
   display: flex;
 
   /* This centers our sketch horizontally. */
-  justify-content: center;
 }
 
 canvas {
   display: block;
+  justify-content: center;
 }
 
 /*Show info about blocks*/
