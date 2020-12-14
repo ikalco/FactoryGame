@@ -6,11 +6,11 @@ let fr = 60;
 let gui;
 
 function preload() {
-  conveyorPng = loadImage('/FactoryGame/Sprites/Conveyor.png');
-  minerPng = loadImage('/FactoryGame/Sprites/Miner.png');
-  sellerPng = loadImage('/FactoryGame/Sprites/Seller.png');
-  presserPng = loadImage('/FactoryGame/Sprites/HPresser.png');
-  TriangularPng = loadImage('/FactoryGame/Sprites/Triangular.png');
+  conveyorPng = loadImage('/Sprites/Conveyor.png');
+  minerPng = loadImage('/Sprites/Miner.png');
+  sellerPng = loadImage('/Sprites/Seller.png');
+  presserPng = loadImage('/Sprites/HPresser.png');
+  TriangularPng = loadImage('/Sprites/Triangular.png');
 }
 
 function setup() {

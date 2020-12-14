@@ -1,50 +1,51 @@
 <!DOCTYPE html><html lang="en">
 <head>
-  <script src="/FactoryGame/libraries/p5.js"></script>
-  <script src="/FactoryGame/libraries/p5.sound.min.js"></script>
+  <script src="/libraries/p5.js"></script>
+  <script src="/libraries/p5.sound.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta charset="utf-8">
-  <script src="/FactoryGame/Classes/Debugger.js"></script>
-  <script src="/FactoryGame/Classes/Blocks/Cell.js"></script>
-  <script src="/FactoryGame/Classes/Blocks/Conveyor.js"></script>
-  <script src="/FactoryGame/Classes/Blocks/Miner.js"></script>
-  <script src="/FactoryGame/Classes/Blocks/Presser.js"></script>
-  <script src="/FactoryGame/Classes/Blocks/Seller.js"></script>
-  <script src="/FactoryGame/Classes/Blocks/Triangular.js"></script>
-  <script src="/FactoryGame/Classes/Materials/Material.js"></script>
-  <script src="/FactoryGame/Classes/Materials/allMats.js"></script>
-  <script src="/FactoryGame/Classes/Player.js"></script>
-  <script src="/FactoryGame/Classes/makeGui.js"></script>
-  <script src="/FactoryGame/Classes/difficulty.js"></script>
-  <script src="/FactoryGame/Main.js"></script>
+  <script src="/Classes/Debugger.js"></script>
+  <script src="/Classes/Blocks/Cell.js"></script>
+  <script src="/Classes/Blocks/Conveyor.js"></script>
+  <script src="/Classes/Blocks/Miner.js"></script>
+  <script src="/Classes/Blocks/Presser.js"></script>
+  <script src="/Classes/Blocks/Seller.js"></script>
+  <script src="/Classes/Blocks/Triangular.js"></script>
+  <script src="/Classes/Materials/Material.js"></script>
+  <script src="/Classes/Materials/allMats.js"></script>
+  <script src="/Classes/Player.js"></script>
+  <script src="/Classes/makeGui.js"></script>
+  <script src="/Classes/difficulty.js"></script>
+  <script src="/Main.js"></script>
 </head>
 
 <body>
   <div id="itemButtons">
-    <button id="conveyorButton" onclick="player.currentItem = 'Conveyor'"></button>
-    <div class="tooltip">
+
+    <button class="tooltip" id="conveyorButton" onclick="player.currentItem = 'Conveyor'">
       <span class="tooltiptext">Cost: 5<br />Conveyor</span>
-    </div>
-    <button id="minerButton" onclick="player.currentItem = 'Miner'"></button>
-    <div class="tooltip">
+    </button>
+
+    <button class="tooltip" id="minerButton" onclick="player.currentItem = 'Miner'">
       <span class="tooltiptext">Cost: 25<br />Miner</span>
-    </div>
-    <button id="sellerButton" onclick="player.currentItem = 'Seller'"></button>
-    <div class="tooltip">
+    </button>
+
+    <button class="tooltip" id="sellerButton" onclick="player.currentItem = 'Seller'">
       <span class="tooltiptext">Cost: 15<br />Seller</span>
-    </div>
-    <button id="deleteButton" onclick="player.currentItem = 'Delete'"></button>
-    <div class="tooltip">
+    </button>
+
+    <button class="tooltip" id="deleteButton" onclick="player.currentItem = 'Delete'">
       <span class="tooltiptext">Delete<br />Blocks</span>
-    </div>
-    <button id="triangularButton" onclick="player.currentItem = 'Triangular'"></button>
-    <div class="tooltip">
+    </button>
+
+    <button class="tooltip" id="triangularButton" onclick="player.currentItem = 'Triangular'">
       <span class="tooltiptext">Cost: 25<br />Triangular</span>
-    </div>
-    <button id="PresserButton" onclick="player.currentItem = 'Presser'"></button>
-    <div class="tooltip">
+    </button>
+
+    <button class="tooltip" id="PresserButton" onclick="player.currentItem = 'Presser'">
       <span class="tooltiptext">Cost: 25<br />Presser</span>
-    </div>
+    </button>
+
   </div>
 </body>
 </html>

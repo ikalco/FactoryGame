@@ -23,7 +23,6 @@ canvas {
 .tooltip {
   position: absolute;
   display: inline-block;
-  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 }
 
 /* Tooltip text */
@@ -39,10 +38,9 @@ canvas {
   /* Position the tooltip text - see examples below! */
   position: absolute;
   width: 120px;
-  bottom: 100%;
+  bottom: 120%;
   left: 50%;
   margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
-  z-index: 1;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
@@ -50,21 +48,16 @@ canvas {
   visibility: visible;
 }
 
-#itemButtons {
-  /*position: absolute;*/
-  justify-content: center;
-}
-
 /* Buttons for placing blocks*/
 #conveyorButton {
-  position: absolute;
-  left: 0px;
+  position: relative;
+  left: 100%;
   top: 820px;
   width: 80px;
   height: 80px;
   border: 0px;
   outline: none;
-  background: url('/FactoryGame/Sprites/Conveyor.png') no-repeat;
+  background: url('/Sprites/Conveyor.png') no-repeat;
   background-size: contain;
 }
 
@@ -73,14 +66,14 @@ canvas {
 }
 
 #minerButton {
-  position: absolute;
-  left: 80px;
+  position: relative;
+  left: 99.2%;
   top: 820px;
   width: 80px;
   height: 80px;
   border: 0px;
   outline: none;
-  background: url('/FactoryGame/Sprites/Miner.png') no-repeat;
+  background: url('/Sprites/Miner.png') no-repeat;
   background-size: contain;
 }
 
@@ -89,14 +82,14 @@ canvas {
 }
 
 #sellerButton {
-  position: absolute;
-  left: 160px;
+  position: relative;
+  left: 98.4%;
   top: 820px;
   width: 80px;
   height: 80px;
   border: 0px;
   outline: none;
-  background: url('/FactoryGame/Sprites/Seller.png') no-repeat;
+  background: url('/Sprites/Seller.png') no-repeat;
   background-size: contain;
 }
 
@@ -106,14 +99,14 @@ canvas {
 
 
 #deleteButton {
-  position: absolute;
-  left: 240px;
+  position: relative;
+  left: 97.6%;
   top: 820px;
   width: 80px;
   height: 80px;
   border: 0px;
   outline: none;
-  background: url('/FactoryGame/Sprites/Conveyor.png') no-repeat;
+  background: url('/Sprites/Conveyor.png') no-repeat;
   background-size: contain;
 }
 
@@ -122,14 +115,14 @@ canvas {
 }
 
 #triangularButton {
-  position: absolute;
-  left: 480px;
+  position: relative;
+  left: 129%;
   top: 820px;
   width: 80px;
   height: 80px;
   border: 0px;
   outline: none;
-  background: url('/FactoryGame/Sprites/Triangular.png') no-repeat;
+  background: url('/Sprites/Triangular.png') no-repeat;
   background-size: contain;
 }
 
@@ -138,14 +131,14 @@ canvas {
 }
 
 #PresserButton {
-  position: absolute;
-  left: 560px;
+  position: relative;
+  left: 128.2%;
   top: 820px;
   width: 80px;
   height: 80px;
   border: 0px;
   outline: none;
-  background: url('/FactoryGame/Sprites/HPresser.png') no-repeat;
+  background: url('/Sprites/HPresser.png') no-repeat;
   background-size: contain;
 }
 
