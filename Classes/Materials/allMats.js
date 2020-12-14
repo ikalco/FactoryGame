@@ -80,14 +80,13 @@ class IronTrin extends Material {
   constructor(arrX, arrY) {
     super(arrX, arrY);
     this.item = 'ironTrin'
-    this.xOffSet = (width/gameBoardSize)/4;
   }
 
   
   draw() {
     push();
     fill(255);
-    triangle((this.x + this.w/2) + this.xOffSet, this.y, (this.x) + this.xOffSet, this.y + this.h, (this.x + this.w) + this.xOffSet, this.y + this.h);
+    triangle((this.x + this.w/2) + this.blockW, this.y, (this.x) + this.blockW, this.y + this.h, (this.x + this.w) + this.blockW, this.y + this.h);
     pop();
   }
   
