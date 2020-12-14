@@ -18,9 +18,8 @@ canvas {
 
 /*Show info about blocks*/
 
-/* Tooltip container */
 .tooltip {
-  position: absolute;
+  position: relative;
   display: inline-block;
   border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 }
@@ -34,13 +33,10 @@ canvas {
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
-
+ 
   /* Position the tooltip text - see examples below! */
   position: absolute;
   z-index: 1;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -20px;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
@@ -56,6 +52,8 @@ canvas {
 /* Buttons for placing blocks*/
 #conveyorButton {
   position: absolute;
+  left: 0px;
+  top: 820px;
   width: 80px;
   height: 80px;
   border: 0px;
@@ -70,6 +68,8 @@ canvas {
 
 #minerButton {
   position: absolute;
+  left: 80px;
+  top: 820px;
   width: 80px;
   height: 80px;
   border: 0px;
@@ -84,6 +84,8 @@ canvas {
 
 #sellerButton {
   position: absolute;
+  left: 160px;
+  top: 820px;
   width: 80px;
   height: 80px;
   border: 0px;
@@ -96,8 +98,11 @@ canvas {
   background-color: #9C9C9C;
 }
 
+
 #deleteButton {
   position: absolute;
+  left: 240px;
+  top: 820px;
   width: 80px;
   height: 80px;
   border: 0px;
@@ -112,6 +117,8 @@ canvas {
 
 #triangularButton {
   position: absolute;
+  left: 480px;
+  top: 820px;
   width: 80px;
   height: 80px;
   border: 0px;
@@ -126,6 +133,8 @@ canvas {
 
 #PresserButton {
   position: absolute;
+  left: 560px;
+  top: 820px;
   width: 80px;
   height: 80px;
   border: 0px;
