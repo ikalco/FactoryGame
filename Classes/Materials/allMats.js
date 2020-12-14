@@ -86,7 +86,7 @@ class IronTrin extends Material {
   draw() {
     push();
     fill(255);
-    triangle((this.x + this.w/2) + this.blockW, this.y, (this.x) + this.blockW, this.y + this.h, (this.x + this.w) + this.blockW, this.y + this.h);
+    triangle((this.x + this.w/2), this.y, (this.x), this.y + this.h, (this.x + this.w), this.y + this.h);
     pop();
   }
   
