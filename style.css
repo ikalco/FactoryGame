@@ -27,7 +27,7 @@ canvas {
 
 /* Tooltip text */
 .tooltip .tooltiptext {
-  /*visibility: hidden;*/
+  visibility: hidden;
   width: 120px;
   background-color: black;
   color: #fff;
@@ -86,22 +86,6 @@ canvas {
   background-color: #9C9C9C;
 }
 
-#PresserButton {
-  position: absolute;
-  left: 560px;
-  top: 820px;
-  width: 80px;
-  height: 80px;
-  border: 0px;
-  outline: none;
-  background: url('/FactoryGame/Sprites/HPresser.png') no-repeat;
-  background-size: contain;
-}
-
-#PresserButton:hover {
-  background-color: #9C9C9C;
-}
-
 #sellerButton {
   position: absolute;
   left: 160px;
@@ -115,6 +99,22 @@ canvas {
 }
 
 #sellerButton:hover {
+  background-color: #9C9C9C;
+}
+
+#deleteButton {
+  position: absolute;
+  left: 240px;
+  top: 820px;
+  width: 80px;
+  height: 80px;
+  border: 0px;
+  outline: none;
+  background: url('/FactoryGame/Sprites/Conveyor.png') no-repeat;
+  background-size: contain;
+}
+
+#deleteButton:hover {
   background-color: #9C9C9C;
 }
 
@@ -134,18 +134,18 @@ canvas {
   background-color: #9C9C9C;
 }
 
-#deleteButton {
+#PresserButton {
   position: absolute;
-  left: 240px;
+  left: 560px;
   top: 820px;
   width: 80px;
   height: 80px;
   border: 0px;
   outline: none;
-  background: url('/FactoryGame/Sprites/Conveyor.png') no-repeat;
+  background: url('/FactoryGame/Sprites/HPresser.png') no-repeat;
   background-size: contain;
 }
 
-#deleteButton:hover {
+#PresserButton:hover {
   background-color: #9C9C9C;
 }
