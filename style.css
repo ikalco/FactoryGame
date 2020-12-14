@@ -21,7 +21,6 @@ canvas {
 /* Tooltip container */
 .tooltip {
   position: relative;
-  top: 800px;
   display: inline-block;
   border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 }
