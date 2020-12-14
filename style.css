@@ -1,0 +1,151 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  display: flex;
+
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+}
+
+canvas {
+  display: block;
+}
+
+/*Show info about blocks*/
+
+/* Tooltip container */
+.tooltip {
+  position: absolute;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -20px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+#itemButtons {
+  /*position: absolute;*/
+  justify-content: center;
+}
+
+/* Buttons for placing blocks*/
+#conveyorButton {
+  position: absolute;
+  left: 0px;
+  top: 820px;
+  width: 80px;
+  height: 80px;
+  border: 0px;
+  outline: none;
+  background: url('/Sprites/Conveyor.png') no-repeat;
+  background-size: contain;
+}
+
+#conveyorButton:hover {
+  background-color: #9C9C9C;
+}
+
+#minerButton {
+  position: absolute;
+  left: 80px;
+  top: 820px;
+  width: 80px;
+  height: 80px;
+  border: 0px;
+  outline: none;
+  background: url('/Sprites/Miner.png') no-repeat;
+  background-size: contain;
+}
+
+#minerButton:hover {
+  background-color: #9C9C9C;
+}
+
+#PresserButton {
+  position: absolute;
+  left: 560px;
+  top: 820px;
+  width: 80px;
+  height: 80px;
+  border: 0px;
+  outline: none;
+  background: url('/Sprites/HPresser.png') no-repeat;
+  background-size: contain;
+}
+
+#PresserButton:hover {
+  background-color: #9C9C9C;
+}
+
+#sellerButton {
+  position: absolute;
+  left: 160px;
+  top: 820px;
+  width: 80px;
+  height: 80px;
+  border: 0px;
+  outline: none;
+  background: url('/Sprites/Seller.png') no-repeat;
+  background-size: contain;
+}
+
+#sellerButton:hover {
+  background-color: #9C9C9C;
+}
+
+#triangularButton {
+  position: absolute;
+  left: 480px;
+  top: 820px;
+  width: 80px;
+  height: 80px;
+  border: 0px;
+  outline: none;
+  background: url('/Sprites/Triangular.png') no-repeat;
+  background-size: contain;
+}
+
+#triangularButton:hover {
+  background-color: #9C9C9C;
+}
+
+#deleteButton {
+  position: absolute;
+  left: 240px;
+  top: 820px;
+  width: 80px;
+  height: 80px;
+  border: 0px;
+  outline: none;
+  background: url('/Sprites/Conveyor.png') no-repeat;
+  background-size: contain;
+}
+
+#deleteButton:hover {
+  background-color: #9C9C9C;
+}
