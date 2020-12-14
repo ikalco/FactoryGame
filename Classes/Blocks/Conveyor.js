@@ -12,7 +12,7 @@ class Conveyor extends Cell {
     if (this.direction == 'up') {
       this.movingItem.y = constrain(this.movingItem.y, this.y - this.h, this.y + this.h);
       this.movingItem.y -= player.conveyorSpeed;
-      if (this.movingItem.y == this.y - this.h) {
+      if (this.movingItem.y == this.y - (this.h+1)) {
         this.movingItem.arrNum[1]--;
         print("working");
       }
