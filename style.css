@@ -62,7 +62,7 @@ canvas {
   height: 80px;
   border: 0px;
   outline: none;
-  background: url('/Sprites/Conveyor.png') no-repeat;
+  background: url('/FactoryGame/Sprites/Conveyor.png') no-repeat;
   background-size: contain;
 }
 
@@ -78,7 +78,7 @@ canvas {
   height: 80px;
   border: 0px;
   outline: none;
-  background: url('/Sprites/Miner.png') no-repeat;
+  background: url('/FactoryGame/Sprites/Miner.png') no-repeat;
   background-size: contain;
 }
 
@@ -94,7 +94,7 @@ canvas {
   height: 80px;
   border: 0px;
   outline: none;
-  background: url('/Sprites/HPresser.png') no-repeat;
+  background: url('/FactoryGame/Sprites/HPresser.png') no-repeat;
   background-size: contain;
 }
 
@@ -110,7 +110,7 @@ canvas {
   height: 80px;
   border: 0px;
   outline: none;
-  background: url('/Sprites/Seller.png') no-repeat;
+  background: url('/FactoryGame/Sprites/Seller.png') no-repeat;
   background-size: contain;
 }
 
@@ -126,7 +126,7 @@ canvas {
   height: 80px;
   border: 0px;
   outline: none;
-  background: url('/Sprites/Triangular.png') no-repeat;
+  background: url('/FactoryGame/Sprites/Triangular.png') no-repeat;
   background-size: contain;
 }
 
@@ -142,7 +142,7 @@ canvas {
   height: 80px;
   border: 0px;
   outline: none;
-  background: url('/Sprites/Conveyor.png') no-repeat;
+  background: url('/FactoryGame/Sprites/Conveyor.png') no-repeat;
   background-size: contain;
 }
 
