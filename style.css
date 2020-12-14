@@ -27,7 +27,7 @@ canvas {
 
 /* Tooltip text */
 .tooltip .tooltiptext {
-  visibility: hidden;
+  /*visibility: hidden;*/
   width: 120px;
   background-color: black;
   color: #fff;
