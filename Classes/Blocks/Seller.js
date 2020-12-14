@@ -19,7 +19,6 @@ class Seller extends Cell {
     } 
     if (currentItem == 'ironPlate') {
       gui.money += 5;
-      print("worked");
     }
     if (currentItem == 'goldPlate') {
       gui.money += 5;

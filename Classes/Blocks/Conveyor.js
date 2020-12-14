@@ -14,6 +14,7 @@ class Conveyor extends Cell {
       this.movingItem.y -= player.conveyorSpeed;
       if (this.movingItem.y == this.y - this.h) {
         this.movingItem.arrNum[1]--;
+        print("working");
       }
     }
     if (this.direction == 'down') {
