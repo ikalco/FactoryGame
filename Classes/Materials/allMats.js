@@ -78,16 +78,17 @@ class GoldPlate extends Material {
 //Trin's
 class IronTrin extends Material {
   constructor(arrX, arrY) {
+    this.xOffSet = (width/gameBoardSize)/4;
+    arrX += this.xOffSet;
     super(arrX, arrY);
     this.item = 'ironTrin'
-    this.xOffSet = (width/gameBoardSize)/4;
   }
 
   
   draw() {
     push();
     fill(255);
-    triangle((this.x + this.w/2) + this.xOffSet, this.y, (this.x) + this.xOffSet, this.y + this.h, (this.x + this.w) + this.xOffSet, this.y + this.h);
+    triangle(this.x + this.w/2, this.y, this.x, this.y + this.h, this.x + this.w, this.y + this.h);
     pop();
   }
   
@@ -98,15 +99,16 @@ class IronTrin extends Material {
 
 class GoldTrin extends Material {
   constructor(arrX, arrY) {
+    this.xOffSet = (width/gameBoardSize)/4;
+    arrX += this.xOffSet;
     super(arrX, arrY);
     this.item = 'ironTrin'
-    this.xOffSet = (width/gameBoardSize)/4;
   }
   
   draw() {
     push();
     fill(255,223,0);
-    triangle((this.x + this.w/2) + this.xOffSet, this.y, (this.x) + this.xOffSet, this.y + this.h, (this.x + this.w) + this.xOffSet, this.y + this.h);
+    triangle(this.x + this.w/2, this.y, this.x, this.y + this.h, this.x + this.w, this.y + this.h);
     pop();
   }
   
