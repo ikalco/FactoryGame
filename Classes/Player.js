@@ -70,6 +70,10 @@ class Player {
       return gameBoard[cellChecking.arrNum[0]][cellChecking.arrNum[1]];
     }
 
+    if (cellChecking.whatAmI != this.currentItem) {
+      gui.money += cellChecking.price / 2;
+    }
+
     switch (this.currentItem) {
       case 'Conveyor':
       if (gui.money > 5) {
@@ -114,10 +118,6 @@ class Player {
       case 'Delete':
       this.blocksChecked.push(cellChecking);
       return new Cell(cellChecking.arrNum[0], cellChecking.arrNum[1], 'up');
-    }
-
-    if (cellChecking.whatAmI != this.currentItem) {
-      gui.money += cellChecking.price / 2;
     }
   }
 
