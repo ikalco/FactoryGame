@@ -70,9 +70,13 @@ class Player {
       return gameBoard[cellChecking.arrNum[0]][cellChecking.arrNum[1]];
     }
 
+    if (cellChecking.whatAmI != this.currentItem) {
+      gui.money += floor(cellChecking.price / 2);
+    }
+
     switch (this.currentItem) {
       case 'Conveyor':
-      if (gui.money > 5) {
+      if (gui.money >= 5) {
         this.blocksChecked.push(cellChecking);
         return new Conveyor(cellChecking.arrNum[0], cellChecking.arrNum[1], this.placeDir);
       } else {
@@ -80,7 +84,7 @@ class Player {
       }
       break;
       case 'Miner':
-      if (gui.money > 25) {
+      if (gui.money >= 25) {
         this.blocksChecked.push(cellChecking);
         return new Miner(cellChecking.arrNum[0], cellChecking.arrNum[1], this.placeDir);
       } else {
@@ -88,7 +92,7 @@ class Player {
       }
       break;
       case 'Seller':
-      if (gui.money > 15) {
+      if (gui.money >= 15) {
         this.blocksChecked.push(cellChecking);
         return new Seller(cellChecking.arrNum[0], cellChecking.arrNum[1], this.placeDir);
       } else {
@@ -96,7 +100,7 @@ class Player {
       }
       break;
       case 'Presser':
-      if (gui.money > 30) {
+      if (gui.money >= 30) {
         this.blocksChecked.push(cellChecking);
         return new Presser(cellChecking.arrNum[0], cellChecking.arrNum[1], this.placeDir);
       } else {
@@ -104,7 +108,7 @@ class Player {
       }
       break;
       case 'Triangular':
-      if (gui.money > 25) {
+      if (gui.money >= 25) {
         this.blocksChecked.push(cellChecking);
         return new Triangular(cellChecking.arrNum[0], cellChecking.arrNum[1], this.placeDir);
       } else {
@@ -114,10 +118,6 @@ class Player {
       case 'Delete':
       this.blocksChecked.push(cellChecking);
       return new Cell(cellChecking.arrNum[0], cellChecking.arrNum[1], 'up');
-    }
-
-    if (cellChecking.whatAmI != this.currentItem) {
-      gui.money += floor(cellChecking.price / 2);
     }
   }
 

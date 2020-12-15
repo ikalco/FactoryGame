@@ -39,18 +39,8 @@ function draw() {
   }
   player.update();
   gui.update();
-  debug.showDebug();
+  //debug.showDebug();
 }
-
-/*
-function fArrCmd(codeString) {
-  for (let i = 0; i < gameBoard.length; i++) {
-    for (let j = 0; j < gameBoard[i].length; j++) {
-      eval(codeString);
-    }
-  }
-}
-*/
 
 function drawPicture(img, angle, obj) {
   push();

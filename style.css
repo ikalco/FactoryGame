@@ -106,7 +106,7 @@ canvas {
   height: 80px;
   border: 0px;
   outline: none;
-  background: url('/FactoryGame/Sprites/Conveyor.png') no-repeat;
+  background: url('/FactoryGame/Sprites/trashbin.png') no-repeat;
   background-size: contain;
 }
 

@@ -14,27 +14,26 @@ class Conveyor extends Cell {
       this.movingItem.y -= player.conveyorSpeed;
       if (this.movingItem.y == this.y - (this.h+1)) {
         this.movingItem.arrNum[1]--;
-        print("working");
       }
     }
     if (this.direction == 'down') {
       this.movingItem.y = constrain(this.movingItem.y, this.y - this.h, this.y + this.h);
       this.movingItem.y += player.conveyorSpeed;
-      if (this.movingItem.y == this.y + this.h) {
+      if (this.movingItem.y == this.y + (this.h+1)) {
         this.movingItem.arrNum[1]++;
       }
     }
     if (this.direction == 'right') {
       this.movingItem.x = constrain(this.movingItem.x, this.movingItem.x - this.w, this.x + this.w);
       this.movingItem.x += player.conveyorSpeed;
-      if (this.movingItem.x == this.x + this.w) {
+      if (this.movingItem.x == this.x + (this.w+1)) {
         this.movingItem.arrNum[0]++;
       }
     }
     if (this.direction == 'left') {
       this.movingItem.x = constrain(this.movingItem.x, this.movingItem.x - this.w, this.x + this.w);
       this.movingItem.x -= player.conveyorSpeed;
-      if (this.movingItem.x == this.x - this.w) {
+      if (this.movingItem.x == this.x - (this.w+1)) {
         this.movingItem.arrNum[0]--;
       }
     }
