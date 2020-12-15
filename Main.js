@@ -14,8 +14,8 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(800, 900);
-  //debug = new Debugger();
+  createCanvas(800, 900);
+  debug = new Debugger();
   gameBoard = Array.from(Array(gameBoardSize), () => new Array(gameBoardSize));
   for (let i = 0; i < gameBoard.length; i++) {
     for (let j = 0; j < gameBoard[i].length; j++) {
@@ -27,18 +27,18 @@ function setup() {
 }
 
 function draw() {
-    background(215);
-    for (let i = 0; i < gameBoard.length; i++) {
-      for (let j = 0; j < gameBoard[i].length; j++) {
-        if (gameBoard[i][j] == undefined) {
-          print(gameBoard);
-          return null;
-        } 
-        gameBoard[i][j].update();
-      }
+  background(215);
+  for (let i = 0; i < gameBoard.length; i++) {
+    for (let j = 0; j < gameBoard[i].length; j++) {
+      if (gameBoard[i][j] == undefined) {
+        print(gameBoard);
+        return null;
+      } 
+      gameBoard[i][j].update();
     }
-    player.update();
-    gui.update();
+  }
+  player.update();
+  gui.update();
   //debug.showDebug();
 }
 
