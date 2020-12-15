@@ -71,12 +71,12 @@ class Player {
     }
 
     if (cellChecking.whatAmI != this.currentItem) {
-      gui.money += cellChecking.price / 2;
+      gui.money += floor(cellChecking.price / 2);
     }
 
     switch (this.currentItem) {
       case 'Conveyor':
-      if (gui.money > 5) {
+      if (gui.money >= 5) {
         this.blocksChecked.push(cellChecking);
         return new Conveyor(cellChecking.arrNum[0], cellChecking.arrNum[1], this.placeDir);
       } else {
@@ -84,7 +84,7 @@ class Player {
       }
       break;
       case 'Miner':
-      if (gui.money > 25) {
+      if (gui.money >= 25) {
         this.blocksChecked.push(cellChecking);
         return new Miner(cellChecking.arrNum[0], cellChecking.arrNum[1], this.placeDir);
       } else {
@@ -92,7 +92,7 @@ class Player {
       }
       break;
       case 'Seller':
-      if (gui.money > 15) {
+      if (gui.money >= 15) {
         this.blocksChecked.push(cellChecking);
         return new Seller(cellChecking.arrNum[0], cellChecking.arrNum[1], this.placeDir);
       } else {
@@ -100,7 +100,7 @@ class Player {
       }
       break;
       case 'Presser':
-      if (gui.money > 30) {
+      if (gui.money >= 30) {
         this.blocksChecked.push(cellChecking);
         return new Presser(cellChecking.arrNum[0], cellChecking.arrNum[1], this.placeDir);
       } else {
@@ -108,7 +108,7 @@ class Player {
       }
       break;
       case 'Triangular':
-      if (gui.money > 25) {
+      if (gui.money >= 25) {
         this.blocksChecked.push(cellChecking);
         return new Triangular(cellChecking.arrNum[0], cellChecking.arrNum[1], this.placeDir);
       } else {
